@@ -1,0 +1,22 @@
+<div class="container-search">
+    <form #f="ngForm" (ngSubmit)="onSearch(f.value)">
+        <div class="form-group">
+            <label for="search"></label>
+            <input type="text" name="keyWord" id="search" placeholder="Search receipe ..." ngModel required>
+            <button type="submit" class="btn-search">
+                <img src="../../assets/images/icon-loupe.png" alt="icon loupe image" width="30px" height="30px">
+            </button>
+        </div>
+    </form>
+</div>
+<div class="container-card">
+    <div class="card" *ngFor="let p of searchResult">
+
+        <div class="imgSearch">
+            <img src="{{p.thumbnail_url}}" alt="{{p.name}}" (click)="onValue(p)">
+            <h2>{{p.name}}</h2>
+        </div>
+
+
+    </div>
+</div>

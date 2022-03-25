@@ -1,0 +1,77 @@
+/* --------------------------------------------- SEARCH ------------------------------------------------------------ */
+.container-search {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-search{
+    border: none;
+    background-color: white;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: row;
+}
+#search {
+    max-width: 60%;
+    min-width: 30%;
+    width: 60%;
+    padding: 12px 200px;
+    background-color: transparent;
+    transition: transform 250ms ease-in-out;
+    font-size: 20px;
+    line-height: 18px;   
+    color: #575756;
+    border-radius: 50px;
+    margin: 5% auto;
+}
+@media screen and (max-width: 900px) {
+    #search {
+        width: 100%;
+        align-items: center;
+        min-width: none;
+        padding: 12px 50%; 
+    }
+}
+/* ---------------------------------------------CARD RECEIPE SEARCH------------------------------------------------- */
+.container-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5% 10% 0 10%;
+}
+.card {
+    box-sizing: border-box;
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px 10px 10px 10px;
+    box-shadow: lightgray 4px 4px 20px;
+    border-radius: 10px;
+    border: 2px solid #52A9A4;
+    transition: 0.4s;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card h2 {
+    font-size: 20px;
+}
+
+.imgSearch{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.imgSearch img{
+    width: 375px;
+    height: 400px;
+    text-align: center;
+    border-radius: 10px;
+    object-fit: cover;
+}

@@ -1,0 +1,48 @@
+.container-nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.img-nav{ 
+ padding-left: 5vh;   
+ float:left ;
+ position: absolute;
+}
+.img-nav:hover {
+    transform: rotate(1080deg);
+    transition: 400ms;
+}
+
+.btn-nav{  
+    background:transparent ;
+    border: transparent;
+    width: 25%;
+    margin-top: 5vh;
+    margin-bottom: 5.5vh;
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
+    font-size: 3.5vh;
+      
+       
+}
+
+.btn-nav:hover { 
+       color: #52A9A4  ;
+       font-style:italic ;
+} 
+
+.border {
+    margin: auto;
+    width: 60%;
+    border-top: 2px solid #52A9A4;
+}
+
+@media screen and (max-width: 650px){
+    .img-nav {
+        display: none;
+    } 
+    .btn-nav{
+        font-size: 25px;
+    }
+ }
